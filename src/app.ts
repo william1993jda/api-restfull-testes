@@ -1,5 +1,4 @@
 import fastify from 'fastify'
-import { env } from './env/index.js'
 import { transactrionsRoutes } from './routes/transactions.js'
 import fastifyCookie from '@fastify/cookie'
 
