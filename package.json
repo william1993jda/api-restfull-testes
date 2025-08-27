@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "type": "module",
   "description": "",
-  "main": "index.js",
   "engines": {
     "node": ">=18.0.0"
+    
   },
+  "format": ["esm"],
+  
   "scripts": {
     "knex": "tsx ./node_modules/knex/bin/cli.js",
     "dev": "tsx watch src/server.ts",
     "test": "vitest",
-    "build": "tsup src --outDir build"
+    "build": "tsup src --format esm --out-dir build"
+    
   },
   "keywords": [],
   "author": "",
@@ -35,3 +38,4 @@
     "zod": "^4.1.3"
   }
 }
+
